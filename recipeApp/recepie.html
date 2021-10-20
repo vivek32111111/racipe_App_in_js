@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="recipe.css" />
+
+    <title>Recipe App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <h1>The Recipe App</h1>
+        <br />
+        <p>What recipe you want to save today?</p>
+      </div>
+
+      <div class="search">
+        <input id="search" type="search" placeholder="Search" />
+      </div>
+
+      <div class="resultA">
+        <br />
+        <h2>You currently have 0 recipes stored in your recipe App!</h2>
+        <br />
+        <button id="Add">Add recipe</button>
+      </div>
+      <div class="resultB">
+        <h1 id="heading">Add recipe</h1>
+        <div class="add-recipe">
+          <input id="input-title" type="text" />
+
+          <textarea name="directions" id="input-method" cols="10" rows="10">
+          </textarea>
+          <h1>Ingredients</h1>
+          <ul>
+            <!-- <li style="display: inline-block">water</li>
+            <input class="check" type="checkbox" /> -->
+            <br />
+
+            <!-- <li style="display: inline-block">maggie</li>
+            <input class="check" type="checkbox" /> -->
+          </ul>
+          <!-- <label>□ Maggie</label>
+          <input class="check" type="checkbox" />
+          <label>□ Water</label>
+          <input class="check" type="checkbox" /> -->
+          <div class="add-ingredient">
+            <span>
+              <input id="ingreText" type="text" />
+              <button id="addIngre">Add Ingredients</button>
+            </span>
+            <br />
+            <br />
+            <button id="submit-recipe" type="submit">Add new recipe</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="box3" style="display: block">
+        <div class="resultC">
+          <div class="recipe-card" id="recipes">
+            <!-- <div class="title"> -->
+            <h3 id="recipe-title"></h3>
+            <!-- </div> -->
+            <div class="recipe-details">
+              <p id="recipe-method"></p>
+              <ul id="recipe-ingredients">
+                <li></li>
+              </ul>
+            </div>
+            <br />
+            <button class="delete">delete</button>
+            <button class="edit">edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="rec.js"></script>
+  </body>
+</html>
